@@ -1,68 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-        <title>Tutorial Test - Tags</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Tutorial Test - Tags</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="https://bogintaro.github.io/hoge" rel="canonical" />
+
+  <!-- Feed -->
         <link href="https://bogintaro.github.io/hoge/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tutorial Test Full Atom Feed" />
-        <!-- twitter card metadata -->
-        <!-- OG Tags -->
-        <!-- favicon -->
-        <!-- moment.js for date formatting -->
-        <script src="https://bogintaro.github.io/hoge/theme/js/moment.js"></script>
-        <!-- css -->
-        <link rel="stylesheet" type="text/css" href="https://bogintaro.github.io/hoge/theme/css/main.css" />
-		<script>
-			
-                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-    
-    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
-                
-                grunticon(["https://bogintaro.github.io/hoge/theme/css/icons.data.svg.css", "https://bogintaro.github.io/hoge/theme/css/icons.data.png.css", "https://bogintaro.github.io/hoge/theme/css/icons.fallback.css"]);
-            </script>
-        <noscript><link href="https://bogintaro.github.io/hoge/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
-        <!-- menu toggle javascript -->
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", initMenu);
-            
-            function initMenu(){
-                var menu = document.getElementById("menu");
-                var menulink = document.getElementById("menu-link");
-                menulink.addEventListener("click", function toggleMenu(){
-                        window.event.preventDefault();
-                        menulink.classList.toggle('active');
-                        menu.classList.toggle('active');              
-                    });
-            };
-        </script>
+
+  <link href="https://bogintaro.github.io/hoge/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="https://bogintaro.github.io/hoge/theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+      <meta property="og:locale" content="" />
+    <meta property="og:site_name" content="Tutorial Test" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tutorial Test" />
+    <meta property="og:description" content="View the blog." />
+    <meta property="og:url" content="https://bogintaro.github.io/hoge" />
+      <meta name="og:image" content="https://bogintaro.github.io/hoge/theme/images/post-bg.jpg">
 </head>
-<body>
-    <div role="banner" id="masthead">
-        <header>
-            <h1><a href="/">'s Blog</a></h1>
-            <a href="#menu" id="menu-link">more stuff</a>
-            <nav id="menu">
-                <ul>
-                            <li><a href="https://bogintaro.github.io/hoge/category/tesuto.html">テスト</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-        <div class="page" role="main">
-<div class="page-title">
-        <h1>tags</h1>
-</div>
-<div class="articles">
+<!-- TODO : Body class -->
+<body class="home-template">
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
     <ul>
-        <li><a href="https://bogintaro.github.io/hoge/tag/tesuto.html">テスト</a> <span class="count">(1)</span></li>
-        <li><a href="https://bogintaro.github.io/hoge/tag/tou-gao.html">投稿</a> <span class="count">(1)</span></li>
+
+
     </ul>
-</div>
-                <footer>
-                    <div class="icons">
-                    </div>
-                    <p>© <script>document.write(moment().format('YYYY'));</script> bogintaro</p>
-                </footer>
-        </div>
+  </div>
+</nav>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="https://bogintaro.github.io/hoge" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Tutorial Test - Tags</h1>
+            <div class="post-cover cover" style="background-image: url('https://bogintaro.github.io/hoge/theme/images/post-bg.jpg')">
+        
+      </div>
+    </header>    
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+    <article class="post">
+      <div class="inner">
+        <a href="https://bogintaro.github.io/hoge/tag/tesuto.html">テスト</a> (1)
+      </div>
+    </article>
+    <article class="post">
+      <div class="inner">
+        <a href="https://bogintaro.github.io/hoge/tag/tou-gao.html">投稿</a> (1)
+      </div>
+    </article>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+  
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="https://bogintaro.github.io/hoge/theme/js/script.js"></script>
+  
 </body>
 </html>
